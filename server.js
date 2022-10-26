@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 
-var app = require('./app');
-var debug = require('debug')('Assignmen229:server');
+var app = require('./server/config/app');
+var debug = require('debug')('Assignmen1229:server');
 var http = require('http');
 
 var port = normalizePort(process.env.PORT || '9090');
@@ -69,3 +69,8 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+  
+var HOST = 'localhost'
+var PORT = 9090
+console.log(`Server running at http://${HOST}:${PORT}/`); 

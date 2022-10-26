@@ -1,0 +1,77 @@
+<%- include partials/header.ejs%>
+<%- include partials/main_nav.ejs%>
+  
+<!-- Content for the Add page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="usernameTextField">username</label>
+                    <input type="text" class="form-control"
+                    id="usernameTextField"
+                    placeholder="Enter the username"
+                    name="username" 
+                    value="<%= contact.username %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="passwordTextField">password</label>
+                    <input type="text" class="form-control"
+                    id="passwordTextField"
+                    placeholder="Enter the password"
+                    name="password" 
+                    value="<%= contact.password %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="publishedTextField">email_address</label>
+                    <input type="text" class="form-control"
+                    id="publishedTextField"
+                    placeholder="Enter the email_address"
+                    name="email_address" 
+                    value="<%= contact.email_address %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="numberTextArea">number</label>
+                    <textarea type="text" class="form-control"
+                    id="numberTextArea"
+                    placeholder="Enter the number"
+                    name="number" 
+                    value="<%= contact.number %>"
+                    required>
+         
+                    </textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="jobTextField">job</label>
+                    <input type="text" class="form-control"
+                    id="jobTextField"
+                    placeholder="Enter the job"
+                    name="job" 
+                    value="<%= contact.job %>"
+                    required>
+                </div>
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>
+                
+                    <a href="/businessContacts-list" class="btn btn-warning">
+                        <i class="fas fa-undo"></i> Cancel</a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<%-include partials/bottom_nav.ejs%>
+<%-include partials/footer.ejs%>   
+
