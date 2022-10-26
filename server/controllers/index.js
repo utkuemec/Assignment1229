@@ -16,8 +16,8 @@ module.exports.displayHomePage = (req, res, next) => {
     res.render('index', {title: 'Home', displayName: req.user ? req.user.displayName : ''});
 }
 
-module.exports.displayContactPage = (req, res, next) => {
-    res.render('index', {title: 'BusinessContacts', displayName: req.user ? req.user.displayName : ''});
+module.exports.displayBContactPage = (req, res, next) => {
+    res.render('index', {title: 'businessContacts_list', displayName: req.user ? req.user.displayName : ''});
 }
 
 module.exports.displayLoginPage = (req, res, next) => {

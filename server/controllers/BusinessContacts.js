@@ -8,7 +8,7 @@ let jwt = require('jsonwebtoken');
 let BusinessContacts = require('../models/BusinessContacts');
 
 module.exports.displayBusinessContactsList = (req, res, next) => {
-    BusinessContacts.find((err, ) => {
+    BusinessContacts.find((err, BusinessContacts) => {
         if(err)
         {
             return console.error(err);

@@ -13,8 +13,8 @@ router.get('/home', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });
 
-router.get('/BusinessContacts', function(req, res, next) {
-  res.render('BusinessContacts', { title: 'BusinessContacts' });
+router.get('/businessContacts_list', function(req, res, next) {
+  res.render('businessContacts_list', { title: 'BusinessContacts' });
 });
 
 router.get('/register', function(req, res, next) {
