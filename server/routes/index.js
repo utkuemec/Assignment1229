@@ -17,8 +17,16 @@ router.get('/BusinessContacts', function(req, res, next) {
   res.render('BusinessContacts', { title: 'BusinessContacts' });
 });
 
+router.get('/register', function(req, res, next) {
+  res.render('register', { title: 'Register' });
+});
+
 router.get('/Login', function(req, res, next) {
   res.render('Login', { title: 'Login' });
+});
+
+router.get('/Login2', function(req, res, next) {
+  res.render('Login2', { title: 'Login2' });
 });
 
 router.get('/Update', function(req, res, next) {
